@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen w-full bg-blue-500 flex items-center justify-center ">
+    <form class="flex items-center flex-col gap-4"  method="post" name="validform"   onsubmit="return validationForm()">
+        <input class="w-full p-4 outline-blue-500 border-2 border-blue-500" type="text" name="fname" id="fname" placeholder="fname" />
+        <input class="w-full p-4 outline-blue-500 border-2 border-blue-500" type="text" name="lname" id="lname" placeholder="lname" />
+        <input class="w-full p-4 outline-blue-500 border-2 border-blue-500" type="text" name="city" id="city" placeholder="city" />
+        <input class="w-full p-4 outline-blue-500 border-2 border-blue-500" type="number" name="pno" id="pno" placeholder="pno" />
+        <textarea class="w-full p-4 outline-blue-500 border-2 border-blue-500" type="text" name="address" id="address" placeholder="address" ></textarea>
+        <button class="w-full bg-blue-500 p-2 rounded-md text-white font-semibold" type="submit" value="submit">Submit</button>
+      </form>
+    <script src="./index.js"></script>
+</body>
+</html>
